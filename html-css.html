@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- 
+    CSS in HTML 
+    1. inline CSS - with style attribute - only for ONE element 
+    2. internal CSS - with style tag - several elements in ONE HTML document 
+    3. external CSS - with saperate CSS file - elements in several HTML documents - most preferred 
+    -->
+
+    <!-- 2. internal CSS - with style tag - several elements in ONE HTML document  -->
+    <style>
+        .my-style {
+            color: blueviolet;
+            font-family: Verdana;
+        }
+
+        .my-class-style {
+            color: blueviolet;
+            font-family: Verdana;
+        }
+
+        #my-id-style {
+            color: yellow;
+            font-family: Verdana;
+        }
+
+        h2 {
+            color: chocolate;
+            font-family: Verdana;
+        }
+    </style>
+
+    <!-- 3. external CSS - with saperate CSS file - elements in several HTML documents - most preferred  -->
+    <link rel="stylesheet" href="./05-my-css.css">
+
+</head>
+
+<body>
+
+    <h2 style="color: blue;">HTML with CSS</h2>
+
+    <p>Plain HTML</p>
+
+
+    <p style="color: blue; font-family: 'Trebuchet MS'">HTML with CSS</p>
+
+    <!-- 1. inline CSS - with style attribute -->
+    <p style="color: blue; font-family: 'Trebuchet MS'">HTML with inline CSS</p>
+
+    <!-- 2. internal CSS - with style tag  -->
+    <p class="my-style">HTML with internal CSS</p>
+    <p class="my-style">HTML with internal CSS for another element</p>
+    <p id="my-id-style">HTML with internal CSS using id style</p>
+    <h2 class="my-style" id="my-id-style">HTML with CSS using element style</h2>
+    <!-- 3. external CSS - with saperate CSS file - elements in several HTML documents - most preferred -->
+    <p class="my-style-2">HTML with external CSS</p>
+
+</body>
+
+</html>

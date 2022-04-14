@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css>
+    <script src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js></script>
+    <title>Page Title</title>
+</head>
+<style>
+      .required:after {
+    content:" *";
+    color: red;
+  }
+
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+        margin-bottom: auto;
+        border: 2px solid black;
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 50%;
+    }
+</style>
+
+<body style="background-color:skyblue">
+    <div class="container1">
+    <div class="bg-white text-center ">
+        <h1>
+            Candidate Information
+        </h1>
+    </div>
+    </div>
+    <div class="container">
+        <table style="width: 100%; margin-top: 5px; margin-bottom: 5px; font-size: 1em;" border="1px">
+            <tr>
+                <td class="required">Name:</td>
+                <td>
+                    <input type="text" name="surname" SIZE="20" value="" tabindex="2" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Password:</td>
+                <td>
+                    <input type="password" name="USERNAME" size="20" value="" tabindex="3">
+                    <input type="hidden" name="coname" value="PCS">
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Phone number:</td>
+                <td>
+                    <input type="text" name="surname" SIZE="20" value="" tabindex="2" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Gender</td>
+                <td>
+                    <input type="radio" name="s-grp" value="grp1"> MALE
+                    <input type="radio" name="s-grp" value="grp2"> FEMALE
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Date of Birth</td>
+                <td>
+                    <input id="date" name="date" type="date" min="2000-08-14" max="2018-08-14" value="" />
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Email</td>
+                <td>
+                    <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Highest Qualification:</td>
+                <td>
+                    <select name="pref">
+                        <option selected="selected">Select Highest Qualification</option>
+                        <option value="JS">B.Tech </option>
+                        <option value="CORBA">MBA </option>
+                        <option value="VB6">M.Tech </option>
+                        <option value="CORBA">MCA </option>
+                        <option value="VB6">MA </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="required">Cources Intrested in:</td>
+                <td>
+                    <input type="checkbox" name="s-java"> JAVA
+                    <input type="checkbox" name="s-html5"> HTML 5
+                    <input type="checkbox" name="s-css3"> CSS 3
+                    <input type="checkbox" name="s-angularjs"> ANGULAR JS
+                    <input type="checkbox" name="s-jquery"> JQuery
+
+                </td>
+            </tr>
+            <tr>
+                <td>Comments:(Mention External Certification if any)</td>
+                <td>
+                    <textarea name="addr" Rows="4" cols="40" tabindex="0" accesskey="A"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="required">Upload Degree /External Certificates</td>
+                <td>
+                    <input type="file" name="fnm">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="Submit" Value="Submit Information" name="s-but">
+                    <input type="reset" Value="Clear">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="bg-white  text-center">
+        <p class="text-danger text-center">All fields marked (*) are mandatory</p>
+    </div>
+
+</body>
+
+</html>
+

@@ -1,19 +1,12 @@
-// JSX, component, state, props
+import Routes from './routing/Routes';
 
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Parent from "./components/Parent";
-
-//// with arrow function 
+//// with routes  
 const App = () => {
 
   return (
 
     <div>
-      <p>App Component</p>
-      <Header />
-      <Parent />
-      <Footer />
+      <Routes />
     </div>
 
   );
@@ -22,7 +15,43 @@ export default App;
 
 
 
+// // JSX, component, state, props
 
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import Parent from "./components/Parent";
+// import EmpData from "./components/EmpData";
+
+// //// with arrow function 
+// const App = () => {
+
+//   return (
+
+//     <div>
+//       <p>App Component</p>
+//       {/* <Header />
+//       <Parent />
+//       <Footer /> */}
+//       <EmpData />
+//     </div>
+
+//   );
+// }
+// export default App;
+
+//// basic modification 
+// function App() {
+//   return (
+//     <div>
+//       <h1>CG React App</h1>
+//       <p>Welcome to Capgemini React app. </p>
+//     </div>
+//   );
+// }
+// export default App;
+
+
+//// original code 
 // import logo from './logo.svg';
 // import './App.css';
 

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import AppUser from '../models/AppUser';
 import { registerService } from '../services/AppUserService';
 
@@ -26,7 +26,6 @@ const Register = () => {
         registerService(appUser)
             .then((response) => {
                 console.log(response.data);
-                localStorage.setItem('appUser', appUser);
                 alert('You are registered successfully. Please login now.');
                 history.push('/login'); // check this method to navigate 
             }).catch((error) => {
@@ -37,7 +36,7 @@ const Register = () => {
     }
     return (
         <div className="container">
-            <div className="col-4 mt-3" >
+            <div className="col-4 mt-3 pb-3 shadow bg-white" >
                 <h1 className="display-4 text-primary">Register</h1>
                 <form className="form form-group form-dark " onSubmit={submitAppUser}>
                     <div>
@@ -50,6 +49,7 @@ const Register = () => {
                             value={appUser.userName}
                             onChange={handleAppUser}
                             required
+                            autoFocus
                         />
                         <input
                             type="password"
@@ -71,7 +71,7 @@ const Register = () => {
                             type="submit"
                             id="submit"
                             name="submit"
-                            className="form-control btn btn-primary mb-3"
+                            className="form-control btn btn-success mb-3"
                             value="Register"
                             onClick={submitAppUser}
                         />
